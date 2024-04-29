@@ -1,0 +1,107 @@
+*{
+    margin: 0.25rem;
+    padding: 0.25rem;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 3rem;
+    color: rgb(185, 43, 39);
+    text-decoration: underline;
+    font-family: "Acme", sans-serif;
+    font-style: normal;
+    margin-bottom: 2rem;
+}
+.new-post{
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color:crimson;
+    font-size: 1.75rem;
+}
+.new-post-cont{
+    border: 2px solid black;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.content-cont{
+    overflow-y: auto;
+    /* margin-top: 10rem; */
+    display: flex;
+    justify-content: center;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y:auto;
+    justify-content: space-between;
+    margin-top: 2rem;
+    height: max-content;
+    padding: 1rem;
+    width: 90%;
+    /* overflow:visible; */
+}
+.card{
+    width: 20rem;
+    border: 2px solid black;
+    height: 20rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+.user{
+    height: 2rem;
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 200;
+    font-family: "Acme", sans-serif;
+    font-style: normal;
+}
+.post-content{
+    height: 50%;
+    overflow: auto;
+    font-size: 1.25rem;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+hr{
+    margin: 0;
+    padding: 0;
+    height: 0.125rem;
+    background-color: black;
+    text-align: center;
+    width: 50%;    
+}
+.id{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1rem;
+    color: black;
+}
+
+
+.btns{
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.btns a button{
+    font-family: "Acme", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 2px solid black;
+    font-size: 1.25rem;
+    background-color: rgb(85, 240, 85);
+
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a New Post</title>
+    <link rel="stylesheet" href="/newPost.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="/posts" method="post">
+        <label for="username" >Enter Username</label><br>
+        <input type="text" name="username" id="username" placeholder="Enter Username" required>
+        <br>
+        <textarea name="content" id="content" cols="40" rows="10" placeholder="Write your Post here.." required></textarea><br>
+        <button type="submit">SUBMIT POST</button>
+    </form>
+</body>
+</html>

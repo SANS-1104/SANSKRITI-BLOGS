@@ -1,0 +1,31 @@
+*{
+    font-family: "Acme", sans-serif;
+    font-style: normal;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+label{
+    font-size: 2rem;
+}
+input{
+    font-size: 1.5rem;
+    width: 25%;
+    padding: 0.75rem;
+    border-radius: 1rem;
+}
+textarea{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+button{
+    width: 15rem;
+    height: 3rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+    background-color: rgb(54, 175, 54);
+
+}
+

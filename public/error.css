@@ -1,0 +1,23 @@
+.oops{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img{
+    width: 25rem;
+    height: 25rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+a{
+    font-family: "Lugrasimo";
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 15rem;
+}

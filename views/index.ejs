@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>POSTS</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Sanskriti &nbsp; Blogs</h1>
+        <div class="new-post-cont"><a href="http://localhost:8080/posts/newPost" class="new-post" target="_self">Create New Post</a></div>
+    </div>
+    <div class="content-cont">
+        <div class="content">
+            <% for(post of posts){%> 
+                <div class="card">
+                    <div class="user"><h3>@<%= post.username %></h3></div>
+                    <div class="post-content">
+                        <hr>
+                        <h4><%= post.content %></h4>
+                    </div>
+                    <div class="btns">
+                        <a href="http://localhost:8080/posts/<%= post.id %>"><button type="submit" class="see">See Details</button></a>
+                        <a href="http://localhost:8080/posts/<%= post.id %>/edit"><button type="submit" class="edit">Edit Post</button></a>
+                        <form method="post" action="/posts/<%= post.id %>?_method=DELETE">
+                            <a href=""><button type="submit" class="del">Delete Post</button></a>
+                        </form>
+                    </div>
+                </div>
+                <%}%>
+        </div>
+    </div>
+</body>
+</html>
+

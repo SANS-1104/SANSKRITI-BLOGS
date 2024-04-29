@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST BY SEARCH</title>
+    <link rel="stylesheet" href="/show.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="header">
+        <h1>Here is your post in detail</h1>
+    </div>
+    <div class="content-cont">
+        <div class="content">
+                <div class="card">
+                    <div class="user"><h3>@<%= post.username %></h3></div><hr>
+                    <div class="id">Post Id : <%= post.id %></div>
+                    <div class="post-content">
+                        <hr>
+                        <h4><%= post.content %></h4>
+                    </div>
+                    <div class="btns">
+                        <a href="/posts"><button type="submit">Go to Posts</button></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
